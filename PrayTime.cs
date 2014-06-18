@@ -64,8 +64,8 @@ namespace PrayTime
         public static int Floating = 3;    // floating point number
 
         // Time Names
-        public static String[] timeNames ={	"Imsak", "Fajr", "Sunrise", "Dhuhr", "Asr", "Sunset", "Maghrib",
-                                                "Isha", "Midnight"};
+        //public static String[] timeNames ={	"Imsak", "Fajr", "Sunrise", "Dhuhr", "Asr", "Sunset", "Maghrib",
+        //                                        "Isha", "Midnight"};
         static String InvalidTime = "----";	 // The string used for inv
 
 
