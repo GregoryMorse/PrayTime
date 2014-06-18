@@ -46,6 +46,7 @@ namespace PrayTime
         public static int Custom = 6;    // Custom Setting
         public static int Tehran = 7;    // Institute of Geophysics, University of Tehran
         public static int Morocco = 8;    // Moroccan Habous
+        public static int Malaysia = 9;   // Department of Islamic Development, Malaysia
 
         // Juristic Methods
         public static int Shafii = 0;    // Shafii (standard)
@@ -107,7 +108,10 @@ namespace PrayTime
         public PrayTime()
         {
             //times = new int[9];
-            methodParams = new double[9][];
+            //{fajr angle, maghrib is in minutes, maghrib minutes/angle,
+            //  isha is in minutes, isha minutes/angle,
+            //  isha minute delay and when set use fajr for midnight calculation instead of sunrise
+            methodParams = new double[10][];
             offset = new int[9] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             this.methodParams[Jafari] = new double[] { 16, 0, 4, 0, 14, 1 };
             this.methodParams[Karachi] = new double[] { 18, 1, 0, 0, 18, 0 };
@@ -117,6 +121,7 @@ namespace PrayTime
             this.methodParams[Egypt] = new double[] { 19.5, 1, 0, 0, 17.5, 0 };
             this.methodParams[Tehran] = new double[] { 17.7, 0, 4.5, 0, 14, 1 };
             this.methodParams[Morocco] = new double[] { 19, 1, 1.5, 0, 18, 0 };
+            this.methodParams[Malaysia] = new double[] { 20, 0, .83, 0, 18, 0 }; // dzuhr has 2 minute delay, asr has 1 minute delay, maghrib has 2 minute delay, isha has 2 minute delay
             this.methodParams[Custom] = new double[] { 18, 1, 0, 0, 17, 0 };
         }
 

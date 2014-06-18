@@ -105,7 +105,10 @@ function PrayTimes(method) {
 			params: { fajr: 16, isha: 14, maghrib: 4, midnight: 'Jafari' } },
 		Morocco: {
 			name: 'Moroccan Habous',
-			params: { fajr: 19, isha: 18, maghrib : 1.5 } }
+			params: { fajr: 19, isha: 18, maghrib: 1.5 } },
+		Malaysia: {
+			name: 'Department of Islamic Development, Malaysia',
+			params: { fajr: 20, isha: 18, maghrib: .83 } } // dzuhr has 2 minute delay, asr has 1 minute delay, maghrib has 2 minute delay, isha has 2 minute delay
 	},
 
 
