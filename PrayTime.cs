@@ -45,6 +45,7 @@ namespace PrayTime
         public static int Egypt = 5;    // Egyptian General Authority of Survey
         public static int Custom = 6;    // Custom Setting
         public static int Tehran = 7;    // Institute of Geophysics, University of Tehran
+        public static int Morocco = 8;    // Moroccan Habous
 
         // Juristic Methods
         public static int Shafii = 0;    // Shafii (standard)
@@ -106,7 +107,7 @@ namespace PrayTime
         public PrayTime()
         {
             //times = new int[9];
-            methodParams = new double[8][];
+            methodParams = new double[9][];
             offset = new int[9] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
             this.methodParams[Jafari] = new double[] { 16, 0, 4, 0, 14, 1 };
             this.methodParams[Karachi] = new double[] { 18, 1, 0, 0, 18, 0 };
@@ -115,6 +116,7 @@ namespace PrayTime
             this.methodParams[Makkah] = new double[] { 18.5, 1, 0, 1, 90, 0 };
             this.methodParams[Egypt] = new double[] { 19.5, 1, 0, 0, 17.5, 0 };
             this.methodParams[Tehran] = new double[] { 17.7, 0, 4.5, 0, 14, 1 };
+            this.methodParams[Morocco] = new double[] { 19, 1, 1.5, 0, 18, 0 };
             this.methodParams[Custom] = new double[] { 18, 1, 0, 0, 17, 0 };
         }
 
